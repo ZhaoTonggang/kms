@@ -157,6 +157,16 @@ const sysList = {
 		'Standard [Preview]': 'MFY9F-XBN2F-TYFMP-CCV49-RMYVH',
 		'Datacenter [Preview]': '6XBNX-4JQGW-QX6QG-74P76-72V67'
 	},
+	'Windows Server 2022': {
+		'Standard': 'VDYBN-27WPP-V4HQT-9VMD4-VMK7H',
+		'Datacenter': 'WX4NM-KYWYW-QJJR4-XV3QB-6VM33',
+		'Datacenter：Azure Edition': 'NTBV8-9K7Q8-V27C6-M2BTV-KHMXV'
+	},
+	'Windows Server 2025': {
+		'标准': 'TVRH6-WHNXV-R9WG3-9XRFY-MY832',
+		'数据中心': 'D764K-2NDRG-47T6Q-P8T8W-YP6DF',
+		'Datacenter：Azure Edition': 'XGN3F-F394H-FD2MY-PP6FD-8MCRC'
+	},
 	'Windows Longhorn': {
 		'Web [Preview]': 'MDRCM-4WKCW-J93FF-J9Q48-M6KBB',
 		'Standard': 'Q37JX-P3HHB-GKRH2-PDBKG-GGXPW',
