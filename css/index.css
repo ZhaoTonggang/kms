@@ -48,21 +48,20 @@ h3 {
 	text-align: center;
 	margin: 10px auto;
 	padding: 5px;
-	background-color: #ddf8ff;
+	background-color: #c4f3ff;
 	border-top: 3px solid #00bbd0;
 }
 
 select {
-	color: inherit;
-	font: inherit;
-	margin: 0;
-	font-size: inherit;
-	line-height: inherit;
-	text-transform: none
+	border-radius: 0 5px 5px 0;
 }
 
 select:hover {
 	cursor: pointer;
+}
+
+option {
+	font-weight: bold;
 }
 
 .container {
@@ -94,21 +93,23 @@ select:hover {
 
 .red {
 	border-left: 3px solid #FF0000;
-	background-color: #ffeef3;
+	background-color: #ffd4e1;
 }
 
 .green {
 	border-left: 3px solid #86cc00;
-	background-color: #eeffd6;
+	background-color: #e7ffc5;
 }
 
 .yellow {
-	border-left: 3px solid #ffe500;
-	background-color: #fff8c8;
+	border-left: 3px solid #ffbe00;
+	background-color: #fff3a4;
 }
 
+#dbit,
 #dname,
 #dversion,
+#dkey,
 #btn {
 	display: none;
 }
@@ -127,9 +128,7 @@ select:hover {
 	white-space: nowrap;
 	vertical-align: middle;
 	line-height: 1;
-	color: #555;
 	text-align: center;
-	background-color: #eee;
 	border: 1px solid #ccc;
 	display: table-cell;
 	height: 40px;
@@ -139,22 +138,27 @@ select:hover {
 }
 
 .span:first-child {
+	color: #000;
+	background-color: #fff8b5;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 	border-right: 0
 }
 
 .span:last-child {
+	color: white;
+	background-color: #5cb85c;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
-	border-left: 0
+	border-left: 0;
+	cursor: pointer
 }
 
 .control {
 	display: block;
 	width: 100%;
-	color: #555;
-	background-color: #fff;
+	color: #000;
+	background-color: #cdffcd;
 	border: 1px solid #ccc;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -167,15 +171,11 @@ select:hover {
 	height: 40px;
 	padding: 5px 10px;
 	font-size: 15px;
-	line-height: 1;
-	border-radius: 5px
+	font-weight: bold;
+	line-height: 1
 }
 
-.control:last-child {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
+.control:hover,
 .control:focus {
 	border-color: #5cb85c;
 	outline: 0;
@@ -201,14 +201,9 @@ select:hover {
 	border: 0
 }
 
-.control[disabled],
-.control[readonly] {
-	background-color: #eee;
-	opacity: 1
-}
-
-.control[disabled] {
-	cursor: not-allowed
+.copy {
+	border-radius: 0;
+	cursor: copy;
 }
 
 .btn {
@@ -255,16 +250,16 @@ select:hover {
 	outline-offset: -2px;
 }
 
+.span:last-child:hover,
 .btn:hover {
-	color: #fff;
 	background-color: #449d44;
 	border-color: #398439;
 }
 
+.span:last-child:hover,
 .btn:hover,
-.btn:focus,
-.btn.focus {
-	color: #333;
+.btn:focus {
+	color: #000;
 	text-decoration: none;
 }
 

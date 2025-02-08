@@ -1,7 +1,7 @@
 "use strict";
 const sysList = {
-	'windows系统': {
-		'Windows Vista': {
+	'Windows': {
+		'Vista': {
 			'商用版': 'YFKBB-PQJJV-G996G-VWGXY-2V3X8',
 			'商用版 N': 'HMBQG-8H2RH-C77VX-27R82-VMQBT',
 			'企业版': 'VKK3X-68KWM-X2YGT-QR4M6-4BWMV',
@@ -12,7 +12,7 @@ const sysList = {
 			'企业版 [Preview 1]': '3JHG3-Y66GP-B7F3K-JFVX2-VBH7K',
 			'企业版 [Beta-2 build 5384]': 'MF9PG-RQK7R-26BPJ-TWFYK-RHXCM'
 		},
-		'Windows 7': {
+		'7': {
 			'企业版 E': 'C29WB-22CC8-VJ326-GHFJW-H9DH4',
 			'企业版': '33PXH-7Y6KF-2VJC9-XBBR8-HVTHH',
 			'企业版 N': 'YDRBP-3D83W-TY26F-D46B2-XCKRJ',
@@ -23,7 +23,7 @@ const sysList = {
 			'嵌入式 Standard': 'XGY72-BRBBT-FF8MH-2GG8H-W7KCW',
 			'精简版': '73KQT-CD9G6-K7TQG-66MRP-CQ22C'
 		},
-		'Windows 8': {
+		'8': {
 			'核心版 / Server 2012': 'BN3D2-R7TKB-3YPBD-8DRP2-27GG4',
 			'核心版 / Server 2012 Country Specific': '4K36P-JN4VD-GDC6V-KDT89-DYFKP',
 			'核心版 / Server 2012 N': '8N2M2-HWPGY-7PGT9-HGDD8-GVGGY',
@@ -34,12 +34,10 @@ const sysList = {
 			'企业版': '32JNW-9KQ84-P47T8-D8GGY-CWCK7',
 			'企业版 N': 'JMNMF-RHW7P-DMY6X-RF3DR-X2BQT',
 			'专业版': 'NG4HW-VH26C-733KW-K6F98-J8CK4',
-			'专业版 N': 'XCVCF-2NXM9-723PB-MHCB7-2RYQQ'
-		},
-		'Windows 8': {
+			'专业版 N': 'XCVCF-2NXM9-723PB-MHCB7-2RYQQ',
 			'专业版 WMC [RC]': 'MY4N9-TGH34-4X4VY-8FG2T-RRDPV'
 		},
-		'Windows 8.1': {
+		'8.1': {
 			'核心版': 'M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK',
 			'核心版 ARM64': 'XYTND-K6QKT-K2MRH-66RTM-43JKP',
 			'核心版 Country Specific': 'NCTT7-2RGK8-WMHRF-RY7YQ-JTXG3',
@@ -62,10 +60,10 @@ const sysList = {
 			'企业版 [Preview]': '2MP7K-98NK8-WPVF3-Q2WDG-VMD98',
 			'专业版 (Blue) [Preview]': 'MTWNQ-CKDHJ-3HXW9-Q2PFX-WB2HQ'
 		},
-		'Windows 8.x': {
+		'8.x': {
 			'[Preview]': 'MPWP3-DXNP9-BRD79-W8WFP-3YFJ6'
 		},
-		'Windows 10 / 11': {
+		'10 / 11': {
 			'企业版 LTSC 2019': 'M7XTQ-FN8P6-TTKYV-9D4CC-J462D',
 			'企业版 LTSC 2019 N': '92NFX-8DJQP-P6BBQ-THF9C-7CG2H',
 			'企业版 G': 'YYVX9-NTFWV-6MDM3-9PT4T-4M68B',
@@ -106,10 +104,10 @@ const sysList = {
 			'专业学生版 [Pre-Release]': 'YNXW3-HV3VB-Y83VG-KPBXM-6VH3Q',
 			'专业学生版 N [Pre-Release]': '8G9XJ-GN6PJ-GW787-MVV7G-GMR99'
 		},
-		'Windows Server': {
+		'Server': {
 			'Next HI [Preview]': '7VX4N-3VDHQ-VYGHB-JXJVP-9QB26'
 		},
-		'Windows Server 2008': {
+		'Server 2008': {
 			'Web': 'WYR28-R7TFJ-3X2YQ-YCY4H-M249D',
 			'HPC Edition': 'RCTX3-KWVHP-BR6TB-RB6DM-6X7HP',
 			'Standard': 'TM24T-X9RMF-VWXK6-X8JC9-BFGM2',
@@ -126,7 +124,7 @@ const sysList = {
 			'R2 Datacenter': '74YFP-3QFB3-KQT8W-PMXWJ-7M648',
 			'R2 for Itanium Systems': 'GT63C-RJFQ3-4GMB6-BRFB9-CB83V'
 		},
-		'Windows Server 2012': {
+		'Server 2012': {
 			'Datacenter': '48HP8-DN98B-MYWDG-T2DCC-8W83P',
 			'MultiPoint Premium': 'XNH6W-2V9GX-RGJ4K-Y8X6F-QGJ2G',
 			'MultiPoint Standard': 'HM7DN-YVMH3-46JC3-XYTG7-CYQJJ',
@@ -136,7 +134,7 @@ const sysList = {
 			'R2 Essentials': 'KNC87-3J2TX-XB4WP-VCPJV-M4FWM',
 			'R2 Standard': 'D2N9P-3P6X9-2R39C-7RTCD-MDVJX'
 		},
-		'Windows Server 2016': {
+		'Server 2016': {
 			'Azure 核心版': 'VP34G-4NPPG-79JTQ-864T4-R3MQX',
 			'Cloud Storage': 'QN4C6-GBJD2-FB422-GHWJK-GJG2R',
 			'Datacenter': 'CB7KF-BWN84-R7R2Y-793K2-8XDDG',
@@ -147,7 +145,7 @@ const sysList = {
 			'Standard (Semi-Annual Channel v.1803)': 'PTXN8-JFHJM-4WC78-MPCBR-9W4KR',
 			'Datacenter [Preview]': 'VRDD2-NVGDP-K7QG8-69BR4-TVFHB'
 		},
-		'Windows Server 2019': {
+		'Server 2019': {
 			'ARM64': 'GRFBW-QNDC4-6QBHG-CCK3B-2PR88',
 			'Azure 核心版': 'FDNH6-VW9RW-BXPJ7-4XTYG-239TB',
 			'Datacenter': 'WMDGN-G9PQG-XVVXX-R3X43-63DFG',
@@ -158,49 +156,178 @@ const sysList = {
 			'Standard [Preview]': 'MFY9F-XBN2F-TYFMP-CCV49-RMYVH',
 			'Datacenter [Preview]': '6XBNX-4JQGW-QX6QG-74P76-72V67'
 		},
-		'Windows Server 2022': {
+		'Server 2022': {
 			'Standard': 'VDYBN-27WPP-V4HQT-9VMD4-VMK7H',
 			'Datacenter': 'WX4NM-KYWYW-QJJR4-XV3QB-6VM33',
 			'Datacenter：Azure Edition': 'NTBV8-9K7Q8-V27C6-M2BTV-KHMXV'
 		},
-		'Windows Server 2025': {
+		'Server 2025': {
 			'标准': 'TVRH6-WHNXV-R9WG3-9XRFY-MY832',
 			'数据中心': 'D764K-2NDRG-47T6Q-P8T8W-YP6DF',
 			'Datacenter：Azure Edition': 'XGN3F-F394H-FD2MY-PP6FD-8MCRC'
 		},
-		'Windows Longhorn': {
+		'Longhorn': {
 			'Web [Preview]': 'MDRCM-4WKCW-J93FF-J9Q48-M6KBB',
 			'Standard': 'Q37JX-P3HHB-GKRH2-PDBKG-GGXPW',
 			'企业版': '7KYMQ-R788Q-4RF69-KTWKM-92PFJ',
 			'Datacenter [Preview]': 'HR8VD-7DHG2-48378-M9D73-28F4T',
 			'for Itanium Systems [Preview]': 'CWV9H-PHGPW-V93WV-QBQV9-8V336'
 		},
-		'Windows MultiPoint': {
+		'MultiPoint': {
 			'Server 2010': '736RG-XDKJK-V34PF-BHK87-J6X3K'
+		}
+	},
+	'Office': {
+		'2010': {
+			'Office Professional Plus': 'VYBBJ-TRJPB-QFQRF-QFT4D-H3GVB',
+			'Office Standard': 'V7QKV-4XVVR-XYV4D-F7DFM-8R6BM',
+			'Office Home and Business': 'D6QFG-VBYP2-XQHM7-J97RH-VVRCK',
+			'Access': 'V7Y44-9T38C-R2VJK-666HK-T7DDX',
+			'Excel': 'H62QG-HXVKF-PP4HP-66KMR-CW9BM',
+			'SharePoint Workspace': 'QYYW6-QP4CB-MBV6G-HYMCJ-4T3J4',
+			'InfoPath': 'K96W8-67RPQ-62T9Y-J8FQJ-BT37T',
+			'OneNote': 'Q4Y4M-RHWJM-PY37F-MTKWH-D3XHX',
+			'Outlook': '7YDC2-CWM8M-RRTJC-8MDVC-X3DWQ',
+			'PowerPoint': 'RC8FX-88JRY-3PF7C-X8P67-P4VTT',
+			'Project Professional': 'YGX6F-PGV49-PGW3J-9BTGG-VHKC6',
+			'Project Standard': '4HP3K-88W3F-W2K3D-6677X-F9PGB',
+			'Publisher': 'BFK7F-9MYHM-V68C7-DRQ66-83YTP',
+			'Word': 'HVHB3-C6FV7-KQX9W-YQG79-CRY7T',
+			'Visio Premium': 'D9DWC-HPYVV-JGF4P-BTWQB-WX8BJ',
+			'Visio Professional': '7MCW8-VRQVK-G677T-PDJCM-Q8TCP',
+			'Visio Standard': '767HD-QGMWX-8QTDB-9G3R2-KHFGJ'
+		},
+		'2013': {
+			'Office Professional Plus': 'YC7DK-G2NP3-2QQC3-J6H88-GVGXT',
+			'Office Standard': 'KBKQT-2NMXY-JJWGP-M62JB-92CD4',
+			'Project Professional': 'FN8TT-7WMH6-2D4X9-M337T-2342K',
+			'Project Standard': '6NTH3-CW976-3G3Y2-JK3TX-8QHTT',
+			'Visio Professional': 'C2FG9-N6J68-H8BTJ-BW3QX-RM3B3',
+			'Visio Standard': 'J484Y-4NKBF-W2HMG-DBMJC-PGWR7',
+			'Access': 'NG2JY-H4JBT-HQXYP-78QH9-4JM2D',
+			'Excel': 'VGPNG-Y7HQW-9RHP7-TKPV3-BG7GB',
+			'InfoPath': 'DKT8B-N7VXH-D963P-Q4PHY-F8894',
+			'Lync': '2MG3G-3BNTT-3MFW9-KDQW3-TCK7R',
+			'OneNote': 'TGN6P-8MMBC-37P2F-XHXXK-P34VW',
+			'Outlook': 'QPN8Q-BJBTJ-334K3-93TGY-2PMBT',
+			'PowerPoint': '4NT99-8RJFH-Q2VDH-KYG2C-4RD4F',
+			'Publisher': 'PN2WF-29XG2-T9HJ7-JQPJR-FCXK4',
+			'Word': '6Q7VD-NX8JD-WJ2VH-88V73-4GBJ7'
+		},
+		'2016': {
+			'Office Professional Plus': 'XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99',
+			'Office Standard': 'JNRGM-WHDWX-FJJG3-K47QV-DRTFM',
+			'Project Professional': 'YG9NW-3K39V-2T3HJ-93F3Q-G83KT',
+			'Project Standard': 'GNFHQ-F6YQM-KQDGJ-327XX-KQBVC',
+			'Visio Professional': 'PD3PC-RHNGV-FXJ29-8JK7D-RJRJK',
+			'Visio Standard': '7WHWN-4T7MP-G96JF-G33KR-W8GF4',
+			'Access': 'GNH9Y-D2J4T-FJHGG-QRVH7-QPFDW',
+			'Excel': '9C2PK-NWTVB-JMPW8-BFT28-7FTBF',
+			'OneNote': 'DR92N-9HTF2-97XKM-XW2WJ-XW3J6',
+			'Outlook': 'R69KK-NTPKF-7M3Q4-QYBHW-6MT9B',
+			'PowerPoint': 'J7MQP-HNJ4Y-WJ7YM-PFYGF-BY6C6',
+			'Publisher': 'F47MM-N3XJP-TQXJ9-BP99D-8837K',
+			'Skype for Business': '869NQ-FJ69K-466HW-QYCP2-DDBV6',
+			'Word': 'WXY84-JN2Q9-RBCCQ-3Q3J3-3PFJ6'
+		},
+		'2019': {
+			'Office 专业增强版': 'NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP',
+			'Office Standard': '6NWWJ-YQWMR-QKGCB-6TMB3-9D9HK',
+			'Project Professional': 'B4NPR-3FKK7-T2MBV-FRQ4W-PKD2B',
+			'Project Standard': 'C4F7P-NCP8C-6CQPT-MQHV9-JXD2M',
+			'Visio Professional': '9BGNQ-K37YR-RQHF2-38RQ3-7VCBB',
+			'Visio Standard': '7TQNQ-K3YQQ-3PFH7-CCPPM-X4VQ2',
+			'Access': '9N9PT-27V4Y-VJ2PD-YXFMF-YTFQT',
+			'Excel': 'TMJWT-YYNMB-3BKTF-644FC-RVXBD',
+			'Outlook': '7HD7K-N4PVK-BHBCQ-YWQRW-XW4VK',
+			'PowerPoint': 'RRNCX-C64HY-W2MM7-MCH9G-TJHMQ',
+			'Publisher': 'G2KWX-3NW6P-PY93R-JXK2T-C9Y9V',
+			'Skype for Business': 'NCJ33-JHBBY-HTK98-MYCV8-HMKHJ',
+			'Word': 'PBX3G-NWMT6-Q7XBW-PYJGG-WXD33'
+		},
+		'LTSC 2021': {
+			'Office LTSC Professional Plus': 'FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH',
+			'Office LTSC Standard': 'KDX7X-BNVR8-TXXGX-4Q7Y8-78VT3',
+			'Project Professional': 'FTNWT-C6WBT-8HMGF-K9PRX-QV9H8',
+			'Project Standard': 'J2JDC-NJCYY-9RGQ4-YXWMH-T3D4T',
+			'Visio LTSC Professional': 'KNH8D-FGHT4-T8RK3-CTDYJ-K2HT4',
+			'Visio LTSC Standard': 'MJVNY-BYWPY-CWV6J-2RKRT-4M8QG',
+			'Access LTSC': 'WM8YG-YNGDD-4JHDC-PG3F4-FC4T4',
+			'Excel LTSC': 'NWG3X-87C9K-TC7YY-BC2G7-G6RVC',
+			'Outlook LTSC': 'C9FM6-3N72F-HFJXB-TM3V9-T86R9',
+			'PowerPoint LTSC': 'TY7XF-NFRBR-KJ44C-G83KF-GX27K',
+			'Publisher LTSC': '2MW9D-N4BXM-9VBPG-Q7W6M-KFBGQ',
+			'Skype for Business LTSC': 'HWCXN-K3WBT-WJBKY-R8BD9-XK29P',
+			'Word LTSC': 'TN8H9-M34D3-Y64V9-TR72V-X79KV'
+		},
+		'LTSC 2024': {
+			'Office LTSC 专业增强版': 'XJ2XN-FW8RK-P4HMP-DKDBV-GCVGB',
+			'Office LTSC 标准版': 'V28N4-JG22K-W66P8-VTMGK-H6HGR',
+			'Project Professional ': 'FQQ23-N4YCY-73HQ3-FM9WC-76HF4',
+			'Project Standard': 'PD3TT-NTHQQ-VC7CY-MFXK3-G87F8',
+			'Visio LTSC Professional': 'B7TN8-FJ8V3-7QYCP-HQPMV-YY89G',
+			'Visio LTSC Standard': 'JMMVY-XFNQC-KK4HK-9H7R3-WQQTV',
+			'Access LTSC': '82FTR-NCHR7-W3944-MGRHM-JMCWD',
+			'Excel LTSC': 'F4DYN-89BP2-WQTWJ-GR8YC-CKGJG',
+			'Outlook LTSC': 'D2F8D-N3Q3B-J28PV-X27HD-RJWB9',
+			'PowerPoint LTSC': 'CW94N-K6GJH-9CTXY-MG2VC-FYCWP',
+			'Skype for Business LTSC': '4NKHF-9HBQF-Q3B6C-7YV34-F64P3',
+			'Word LTSC': 'MQ84N-7VYDM-FXV7C-6K7CC-VFW9J'
 		}
 	}
 };
-let vtype, vname;
+const kms = 'kms-serve.heheda.top';
+let vtype, vbit, vname;
+const gbit = document.getElementById('bit');
 const gname = document.getElementById('name');
 const gversion = document.getElementById('version');
+const gkey = document.getElementById('key');
 const link = document.getElementById('btn');
+const dbit = document.getElementById('dbit').style;
 const dname = document.getElementById('dname').style;
 const dversion = document.getElementById('dversion').style;
+const dkey = document.getElementById('dkey').style;
 const ctype = () => {
 	vtype = document.getElementById('type').value;
-	if (vtype) {
+	if (vtype == 'Windows') {
+		dbit.display = 'none';
 		dname.display = 'table';
 		let name = '';
 		for (let j in sysList[vtype]) {
-			name += '<option value="' + j + '">' + j + '</option>';
+			name += '<option value="' + j + '">' + vtype + '&nbsp' + j + '</option>';
+		}
+		gname.innerHTML = '<option value="" selected>--请选择--</option>' + name;
+	} else if (vtype == 'Office') {
+		dname.display = 'none';
+		dbit.display = 'table';
+	} else {
+		dbit.display = 'none';
+		dname.display = 'none';
+		dversion.display = 'none';
+		link.style.display = 'none';
+		dkey.display = 'none';
+		gname.value = '';
+		gversion.value = '';
+		gkey.value = '';
+	}
+}
+const cbit = () => {
+	vbit = gbit.value;
+	if (vbit) {
+		dname.display = 'table';
+		let name = '';
+		for (let j in sysList[vtype]) {
+			name += '<option value="' + j + '">' + vtype + '&nbsp' + j + '</option>';
 		}
 		gname.innerHTML = '<option value="" selected>--请选择--</option>' + name;
 	} else {
 		dname.display = 'none';
 		dversion.display = 'none';
 		link.style.display = 'none';
-		gname.value = '';
+		dkey.display = 'none';
+		dname.value = '';
 		gversion.value = '';
+		gkey.value = '';
 	}
 }
 const cname = () => {
@@ -215,16 +342,52 @@ const cname = () => {
 	} else {
 		dversion.display = 'none';
 		link.style.display = 'none';
+		dkey.display = 'none';
+		gkey.value = '';
 		gversion.value = '';
 	}
 }
 const cversion = () => {
 	let kmskey = gversion.value;
-	if (kmskey) {
-		link.href = 'data:text/plain;base64,' + btoa('slmgr /skms kms-serve.heheda.top\nslmgr /ipk ' + kmskey +
+	if (kmskey && vtype == 'Windows') {
+		link.href = 'data:text/plain;base64,' + btoa('slmgr /ipk ' + kmskey + '\nslmgr /skms ' + kms +
 			'\nslmgr /ato\nslmgr /xpr');
+		link.download = 'kms-windows.bat';
 		link.style.display = 'block';
+		gkey.value = kmskey;
+		dkey.display = 'table';
+	} else if (kmskey && vtype == 'Office') {
+		let bit = gbit.value;
+		if (bit == '32') {
+			bit = ' (x86)';
+		} else if (bit == '64') {
+			bit = '';
+		} else {
+			alert('应用位数为空，请选择应用位数！');
+			return;
+		}
+		link.href = 'data:text/plain;base64,' + btoa(
+			'cd "C:\\Program Files' + bit + '\\Microsoft Office\\Office*"\ncscript ospp.vbs /inpkey:' + kmskey +
+			'\ncscript ospp.vbs /sethst:' + kms + '\ncscript ospp.vbs /act');
+		link.download = 'kms-office-' + gbit.value + '.bat';
+		link.style.display = 'block';
+		gkey.value = kmskey;
+		dkey.display = 'table';
 	} else {
 		link.style.display = 'none';
+		gkey.value = '';
+		dkey.display = 'none';
 	}
+}
+const copy = () => {
+	if (gkey.value) {
+		navigator.clipboard.writeText(gkey.value);
+		alert('复制成功！');
+	} else {
+		alert('复制失败，未获取到密钥！');
+	}
+}
+const chose = () => {
+	gkey.select();
+	gkey.setSelectionRange(0, 99999);
 }

@@ -23,8 +23,16 @@
 				<span class="span">激活类型</span>
 				<select class="control" id="type" onchange="ctype()">
 					<option value="" selected>--请选择--</option>
-					<option value="windows系统">windows系统</option>
-					<!-- <option value="office软件">office软件</option> -->
+					<option value="Windows">windows系统</option>
+					<option value="Office">office软件</option>
+				</select>
+			</div>
+			<div class="input-group" id="dbit">
+				<span class="span">应用位数</span>
+				<select class="control" id="bit" onchange="cbit()">
+					<option value="" selected>--请选择--</option>
+					<option value="32">32位</option>
+					<option value="64">64位</option>
 				</select>
 			</div>
 			<div class="input-group" id="dname">
@@ -39,7 +47,12 @@
 					<option value="" selected>--请选择--</option>
 				</select>
 			</div>
-			<a target="_blank" class="btn" id="btn" download="kms.bat">下载激活脚本</a>
+			<div class="input-group" id="dkey">
+				<span class="span">激活密钥</span>
+				<input readonly class="control copy" type="text" id="key" onclick="chose()" />
+				<span class="span" onclick="copy()">复制</span>
+			</div>
+			<a target="_blank" class="btn" id="btn">下载激活脚本</a>
 			<h3>##清除脚本##</h3>
 			<div class="div red">
 				<p>1、为防止用户误操作，本站提供的激活脚本，无法直接运行在已激活的系统上，如需修改或覆盖原有激活信息，请先<b><em>清除激活信息后再重新激活</em></b>。</p>
