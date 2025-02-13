@@ -276,7 +276,7 @@ const sysList = {
 		}
 	}
 };
-const kms = 'kms-serve.heheda.top';
+const kms = 'kms.serves.heheda.top';
 let vtype, vbit, vname;
 const gbit = document.getElementById('bit');
 const gname = document.getElementById('name');
