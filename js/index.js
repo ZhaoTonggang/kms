@@ -293,8 +293,9 @@ const ctype = () => {
 		dbit.display = 'none';
 		dname.display = 'table';
 		let name = '';
-		for (let j in sysList[vtype]) {
-			name += '<option value="' + j + '">' + vtype + '&nbsp' + j + '</option>';
+		let sysvt = Object.keys(sysList[vtype]);
+		for (let j = 0, len = sysvt.length; j < len; j++) {
+			name += '<option value="' + sysvt[j] + '">' + vtype + '&nbsp' + sysvt[j] + '</option>';
 		}
 		gname.innerHTML = '<option value="" selected>--请选择--</option>' + name;
 	} else if (vtype == 'Office') {
@@ -316,8 +317,9 @@ const cbit = () => {
 	if (vbit) {
 		dname.display = 'table';
 		let name = '';
-		for (let j in sysList[vtype]) {
-			name += '<option value="' + j + '">' + vtype + '&nbsp' + j + '</option>';
+		let sysvt = Object.keys(sysList[vtype]);
+		for (let j = 0, len = sysvt.length; j < len; j++) {
+			name += '<option value="' + sysvt[j] + '">' + vtype + '&nbsp' + sysvt[j] + '</option>';
 		}
 		gname.innerHTML = '<option value="" selected>--请选择--</option>' + name;
 	} else {
